@@ -698,7 +698,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_Name
-      value: Truck
+      value: Vechile
       objectReference: {fileID: 0}
     - target: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1117,7 +1117,98 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abbb5ead387958746be392a584ccd1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 10
+  speed: 25
+  turnSpeed: 70
+  moveAction:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: af60fe12-9291-468a-963c-6188aff775d2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 78d022e5-9798-4ecc-85cd-c33fd57ad149
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: bf7344ce-2544-43d7-9ec5-dd10d4802c06
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 0cca62c0-5941-4072-b08d-c7ab3bcd6f89
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: b0c2cbf5-6766-4e16-a8cd-cca5fb5c19a2
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 4e5bacc8-19d4-4611-afe3-d1de599d4e4c
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: 2D Vector
+      m_Id: 80537c45-f97a-4e1c-b69a-7c6cb51007bd
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 75d41aa9-efbb-4162-b097-6a5988c1f2f1
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 20c2fcf1-a67d-4743-a5ae-27e6abdf2ec7
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 27920804-b631-402c-a8a3-76c24e104ee4
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 17a011f9-45a6-4539-823b-5224d88f0857
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    m_Flags: 0
+    m_Priority: 0
 --- !u!54 &1648500627
 Rigidbody:
   m_ObjectHideFlags: 0
