@@ -1,21 +1,21 @@
-using System.Collections;
+using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class FollowPlayerX : MonoBehaviour
+public class NewMonoBehaviourScript : MonoBehaviour
 {
-    public GameObject plane;
+    public GameObject player;
     private Vector3 offset;
-
-    // Start is called before the first frame update
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         offset = new Vector3(30, 0, 10);
+
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = plane.transform.position + offset;
+        // Offset the camera behind the player by adding to the player's position
+        transform.position = player.transform.position + offset;
     }
 }
